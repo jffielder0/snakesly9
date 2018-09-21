@@ -1,27 +1,24 @@
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+## Snake AI
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
-
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+**Written and developed for CMSC 471 project.**
 
 ---
 
-## Snake Game AI
-
-Written and developed for CMSC 471 project.
+## Outline
 
 1. Setup game
 2. Neural networks
 3. ???
-4. **Profit**
+4. *Profit*
 
 ---
 
-## 1. Game
+## Game
 
 So far the game is as simple in design as possible. Source taken from (https://noobtuts.com/python/python-game) with minor modifications to function properly.
 
-![picture](ss.png)
+![picture](ss1.png)
 
 ---
 
@@ -35,3 +32,41 @@ Use these steps to clone from SourceTree, our client for using the repository co
 4. Open the directory you just created to see your repository’s files.
 
 Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+
+---
+
+## New to git
+
+First install the necessary git packages then to setup, normally you use these commands.
+
+1. git clone https://jfield0@bitbucket.org/slysnake9/code.git
+...Makes .git folder and copies the entire repository and sets pushing to
+2. git init
+...Creates a .git folder that stores files to handle all the changes to be made. If you want to stop tracking a folder just delete this folder and you can start again.
+
+3. git remote add -m https://jfield0@bitbucket.org/slysnake9/code.git
+...Sets the repo you want to connect to.
+
+4. git remote -v
+...To see what repo you are remotely connected to, **https://jfield0@bitbucket.org/slysnake9/code.git** in this case.
+
+### For typical workflow
+#### Done making changes
+1. git status
+...In case you want to see what changed, you can also view the file in .git
+2. git add .
+...Adds all files that are new to the repo for git to track.
+3. git commit -m "Description of changes"
+...records to staging area (build you are getting ready to push) the current state of tracked files.
+4. git push
+... **git push <remote> <branch>** As default will push to origin (origin is the what the remote repo is called on your machine) master (branch master is the main or default branch). This brings the repo up to date with your build.
+
+#### Other commands
+5. git pull
+...Combination of **git fetch** and **git merge origin/master**. Brings your local repo up to date with the connected repo.
+6. git checkout <branchname>
+...Switch between versions of code. Can be used to go back to old commits. Can also go to different branches, switching your head to that branch so your changes now are applied there.
+7. git checkout -b <new-branch>
+...Create a new branch and immediately switch to it.
+
+#####More on branches and git can be looked up, Atlassian has a good [guide](https://www.atlassian.com/git/tutorials/using-branches/git-checkout)
