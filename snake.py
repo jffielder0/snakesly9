@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+# noobtuts.com/python/snake-game
 # requires pip install PyOpenGL
 from OpenGL.GL import *
 from OpenGL.GLUT import *
