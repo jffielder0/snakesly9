@@ -18,13 +18,13 @@ The goal is to get a machine to play snake to perfection through AI techniques a
 
 ## Basic Game Engine
 
-So far the game is as simple in design as possible, utilizes openGL. Followed the tutorial at https://noobtuts.com/python/python-game with minor changes to __keyboard( )__ and __vec_add( )__ functions to have it working properly.
+So far the game is as simple in design as possible, utilizes openGL. Followed the tutorial at https://noobtuts.com/python/snake-game with minor changes to __keyboard( )__ and __vec_add( )__ functions to have it working properly.
 
 ![picture](ss1.png)
 
 #### TODO
-Add Boundaries  
-Restrict movement backward  
+Add Boundaries
+Restrict movement backward
 Death on collision
 
 ---
