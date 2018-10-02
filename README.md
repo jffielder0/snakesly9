@@ -12,7 +12,7 @@ The goal is to get a machine to play snake to perfection through AI techniques a
 1. Setup game
 2. Neural networks
 3. ???
-4. *Profit*
+4. Profit
 
 ---
 
