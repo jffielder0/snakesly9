@@ -67,8 +67,17 @@ def update(value):
         x, y = randint(0, field_width), randint(0, field_height) # random spawn pos
         food.append((x, y))
 
-    # let the snake eat the food
+    
     (hx, hy) = snake[0]          # get the snake's head x and y position
+
+    # check if snake hit any walls or check if snake hit itself
+    if hx < 0 or hx >= 50 or hy < 0 or hy >= 50 or (len(snake) != len(set(snake))):
+        snake.clear()
+        food.clear()    #clear contents of snake and food lists
+
+        snake.append((20, 20))  #reset snake
+
+    # let the snake eat the food
     for x, y in food:            # go through the food list
         if hx == x and hy == y:  # is the head where the food is?
             snake.append((x, y)) # make the snake longer
